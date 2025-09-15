@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Finanzas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>💖 Mis Finanzas 💖</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <input type="text" id="monto" placeholder="Ingrese el monto">
+      <select id="tipo">
+        <option value="ingreso">Ingreso</option>
+        <option value="gasto">Gasto</option>
+      </select>
+      <button id="agregar">Agregar</button>
+    </section>
+
+    <section class="resumen">
+      <h2>Resumen</h2>
+      <p><strong>Total Ingresos:</strong> <span id="total-ingresos">0</span></p>
+      <p><strong>Total Gastos:</strong> <span id="total-gastos">0</span></p>
+      <p><strong>Balance:</strong> <span id="balance">0</span></p>
+      <p id="frase-resumen"></p>
+      <button id="imprimir">🖨️ Imprimir</button>
+    </section>
+
+    <section class="historial">
+      <h2>Historial de Movimientos</h2>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p id="frase-footer"></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
